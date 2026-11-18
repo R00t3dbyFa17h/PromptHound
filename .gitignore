@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Generated payloads / results — never commit live-engagement artifacts
+ph_payload.*
+*.probe.json
+loot/

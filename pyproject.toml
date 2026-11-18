@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompthound"
+version = "0.1.0"
+description = "Prompt-injection harness for authorized AI-application testing — hidden-payload document generator + direct-injection prober with canary detection."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "R00t3dbyFa17h" }]
+keywords = ["prompt-injection", "llm-security", "ai-security", "bug-bounty", "red-team", "rag", "indirect-injection"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+probe = ["requests>=2.25"]
+
+[project.urls]
+Homepage = "https://github.com/R00t3dbyFa17h/PromptHound"
+Repository = "https://github.com/R00t3dbyFa17h/PromptHound"
+Issues = "https://github.com/R00t3dbyFa17h/PromptHound/issues"
+
+[project.scripts]
+prompthound = "prompthound.cli:main"
+
+[tool.setuptools]
+packages = ["prompthound"]
